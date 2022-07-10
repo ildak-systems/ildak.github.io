@@ -18,7 +18,7 @@
         <h3>Sample Structures</h3>
             <table style="width: 300px; border: 1px solid black">
                 <caption>Table of Info</caption>
-                <tablebody>
+                <tablebody><!--Mark's comment 7/9: I think you mean tbody... I'm not sure tablebody is a tag.-->
                     <tr>
                         <th width="50%">Presumably Useful Info</th>
                         <th width="50%">Additional Useful Info</th>
@@ -30,7 +30,7 @@
                 </tablebody>
             </table>
             <ul>
-                <caption>Kanto Region Starter Pokemon</caption>
+                <caption>Kanto Region Starter Pokemon</caption><!--Mark's comment 7/9: I had to look up whether the caption tag could be used outside of a table and the answer is no. I mean, it works, but it's semantically incorrect. This StackOverflow page suggests using the figure and figcaption tags instead. https://stackoverflow.com/questions/1141639/how-to-semantically-provide-a-caption-title-or-label-for-a-list-in-html/35019847#35019847 -->
                 <div style="padding-left:20px">
                     <li>Bulbasaur</li>
                     <li>Charmander</li>
@@ -48,7 +48,7 @@
         <h3>Sample Link</h3>
             <a href="https://www.youtube.com/">The Real Home Page of the Internet</a>
         <h3>Sample Image</h3>
-            <img src="/images/luna.JPG" alt="A sunny photograph of my dog Luna" title="Luna" width="640" height="360">
+            <img src="/images/luna.JPG" alt="A sunny photograph of my dog Luna" title="Luna" width="640" height="360"><!--Mark's comment 7/9: This works, but if you ever move this folder of .html files and the images subdirectory into another folder, this link will break since you have a / at the beginning which tells the web to go to the root folder and look for images/luna.JPG there... So, you should delete the first / and it'll say go to this current folder and look for images/luna.JPG-->
     </div>
     
 </body>
